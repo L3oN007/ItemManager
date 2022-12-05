@@ -6,6 +6,7 @@ import DTO.Item;
 import DTO.Painting;
 import DTO.Statue;
 import DTO.Vase;
+import Tools.MyTool;
 
 /**
  *
@@ -21,8 +22,7 @@ public class AntiqueShop {
             System.out.println("2. Create a Statue");
             System.out.println("3. Create a Painting");
             System.out.println("4. Display the Item");
-            System.out.print("Input a choice:");
-            choice = sc.nextInt();
+            choice = MyTool.getInt("Enter your choice:");
             switch (choice) {
                 case 1:
                     item = new Vase();
@@ -49,5 +49,6 @@ public class AntiqueShop {
                     break;
             }
         } while (choice <= 4);
+        System.out.println("END PROGRAM!");
     }
 }
