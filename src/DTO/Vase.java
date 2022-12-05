@@ -1,5 +1,7 @@
 package DTO;
 
+import Tools.MyTool;
+
 /**
  *
  * @author L3oN
@@ -35,9 +37,15 @@ public class Vase extends Item {
     }
 
     void outputVase() {
+        output();
+        System.out.println("Height: " + height);
+        System.out.println("Material: " + material);
     }
 
     void intputVase() {
+        input();
+        height = MyTool.getInt("Enter height:");
+        material = MyTool.getString("Enter material:");
     }
 
 }

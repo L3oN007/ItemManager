@@ -1,5 +1,7 @@
 package DTO;
 
+import Tools.MyTool;
+
 /**
  *
  * @author L3oN
@@ -35,9 +37,15 @@ public class Statue extends Item {
     }
 
     void outputStatue() {
+        output();
+        System.out.println("weight: " + weight);
+        System.out.println("colour: " + colour);
     }
 
     void intputStatue() {
+        input();
+        weight = MyTool.getInt("Enter weight:");
+        colour = MyTool.getString("Enter colour: ");
     }
 
 }

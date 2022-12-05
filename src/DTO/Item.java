@@ -1,5 +1,7 @@
 package DTO;
 
+import Tools.MyTool;
+
 /**
  *
  * @author L3oN
@@ -33,10 +35,13 @@ public class Item {
     }
 
     void output() {
-
+        System.out.println("Value: " + value);
+        System.out.println("Creator: " + creator);
     }
 
     void input() {
+        value = MyTool.getInt("Enter value: ");
+        creator = MyTool.getString("Enter creator: ");
     }
 
 }

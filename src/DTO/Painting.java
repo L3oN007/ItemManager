@@ -1,5 +1,7 @@
 package DTO;
 
+import Tools.MyTool;
+
 /**
  *
  * @author L3oN
@@ -55,9 +57,19 @@ public class Painting extends Item {
     }
 
     void outputPaiting() {
+        output();
+        System.out.println("Height: " + height);
+        System.out.println("Width: " + width);
+        System.out.println("Is Watercolour: " + isWatercolour);
+        System.out.println("Is Framed: " + isFramed);
     }
 
     void intputPaiting() {
+        input();
+        height = MyTool.getInt("Enter height:");
+        width = MyTool.getInt("Enter width:");
+        isWatercolour = MyTool.confirmYesNo("Is Watercolour(Y/N): ");
+        isFramed = MyTool.confirmYesNo("Is Framed(Y/N): ");
     }
 
 }
