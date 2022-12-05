@@ -56,15 +56,17 @@ public class Painting extends Item {
         this.isFramed = isFramed;
     }
 
-    void outputPaiting() {
+    public void outputPainting() {
+        System.out.println("--------PAINTING--------");
         output();
         System.out.println("Height: " + height);
         System.out.println("Width: " + width);
         System.out.println("Is Watercolour: " + isWatercolour);
         System.out.println("Is Framed: " + isFramed);
+        System.out.println("------------------------");
     }
 
-    void intputPaiting() {
+    public void inputPainting() {
         input();
         height = MyTool.getInt("Enter height:");
         width = MyTool.getInt("Enter width:");

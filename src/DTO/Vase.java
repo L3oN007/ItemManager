@@ -36,13 +36,15 @@ public class Vase extends Item {
         this.material = material;
     }
 
-    void outputVase() {
+    public void outputVase() {
+        System.out.println("--------VASE--------");
         output();
         System.out.println("Height: " + height);
         System.out.println("Material: " + material);
+        System.out.println("--------------------");
     }
 
-    void intputVase() {
+    public void inputVase() {
         input();
         height = MyTool.getInt("Enter height:");
         material = MyTool.getString("Enter material:");

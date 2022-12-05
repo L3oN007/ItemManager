@@ -36,13 +36,15 @@ public class Statue extends Item {
         this.colour = colour;
     }
 
-    void outputStatue() {
+    public void outputStatue() {
+        System.out.println("--------STATUE--------");
         output();
         System.out.println("weight: " + weight);
         System.out.println("colour: " + colour);
+        System.out.println("----------------------");
     }
 
-    void intputStatue() {
+    public void inputStatue() {
         input();
         weight = MyTool.getInt("Enter weight:");
         colour = MyTool.getString("Enter colour: ");
